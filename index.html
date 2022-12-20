@@ -4,9 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/fontawesome/css/all.css"/>
-    <title>House Food</title>
+    <link rel="stylesheet" href="./assets/CSS/home.css"/>
+    <link rel="stylesheet" href="./assets/CSS/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="./assets/JS/anime.min.js"></script>
+    <script src="./assets/JS/bootstrap.js"></script>
+    <script src="./assets/JS/jquery.js"></script>
+    <title>Egyption Home Food</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.png">
 </head>
 <body>
+    <nav >
+        <div id="logo" >
+            <a href="#" ><img src="./assets/images/logo.png"></a>
+        </div>
+        <div id="links">
+            <a href="#" class="nav-link bounce">Home</a>
+            <a href="#" class="nav-link bounce">About us</a>
+            <a href="#" class="nav-link bounce">Contact us</a>
+            <a href="#" class="btn-form bounce" id="signup" data-bs-toggle="modal" data-bs-target="#signupform">Login</a>
+            <a href="#" class="btn-form bounce">Sing up</a>
+
+            <div class="modal fade" id="signupform" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <p style="text-align:center;font-size:1.3em;padding-top:1.3em;font-size:1.5em;font-weight:700">Login</p>
+                    <div id="form">
+                        <div>
+                            <input data-key="username" type="text" name="" required="">
+                            <label>Username</label><br>
+                        </div>
+                        <div>
+                            <input data-key="password" type="password" name="" required="">
+                            <label data-key="password" id="password">Password</label><br>
+                        </div>
+                        <div style="width:100%;" id="footer">
+                            <button style="background-color:rgb(255, 90, 0)" type="submit">Submit</button>
+                            <button style="background-color:#a9a9a9" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    <a href="#" style="color:#0000ee;width:100%;text-align:center;padding:10px;text-decoration:underline">
+                        Don't Have account?</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </nav>
+    <section></section>
+    <section></section>
+    <footer> </footer>
+    <script src="./assets/JS/home.js"></script>
 </body>
 </html>
