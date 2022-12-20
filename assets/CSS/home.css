@@ -1,0 +1,122 @@
+:root{
+    --width:0%;
+}
+
+*{
+    padding:0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    height:4.5em;
+    background-color:#ff5a00;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    color:white;
+}
+
+#links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav a{
+    color:white;
+    text-decoration: none;
+    margin:5px;
+}
+nav a:hover{
+    color:white;
+}
+nav img{
+    height:3em;
+    width:8em;
+    border-radius: 100%;
+}
+
+a.nav-link{
+    font-size:1.1em;
+}
+.btn-form{
+    border:1px solid white;
+    padding:10px;
+    border-radius: 0.8em;
+}
+
+.nav-link{
+    position: relative;
+}
+
+.nav-link::after{
+    display: block;
+    content: '';
+   width: var(--width);
+   height: 2px;
+   background: white;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   animation: under;
+   transition: 1s ease;
+} 
+.nav-link:hover{
+    animation: under 1s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes under {
+    0%{
+        --width: 0%;
+    }
+    100%{
+        --width: 100%;
+    }
+}
+#signupform{
+    color:black;
+}
+
+#form{
+    width:70%;
+    left:10%;
+    position: relative;
+}
+
+#form div{
+    margin:1.8em;
+}
+input{
+    position: relative;
+    border:0;
+    width:100%;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+label{
+    position: absolute;
+    left:8%;
+    z-index: 999;
+    transition: 1s ease;
+
+}
+
+#signupform div button{
+    padding:5px;
+    font-size:1.2em;
+    border-radius: 10px;
+    outline:none;
+    margin: 8px;
+    float: right;
+    border:0;
+}
+
+input:valid ~ label, input:focus ~ label{
+    font-size:0.7em;
+    color:rgb(255, 90, 0);
+    margin-top: -4%;
+}
+
