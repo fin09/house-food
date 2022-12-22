@@ -10,8 +10,9 @@
     <script src="./assets/JS/anime.min.js"></script>
     <script src="./assets/JS/bootstrap.js"></script>
     <script src="./assets/JS/jquery.js"></script>
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css"/>
     <title>Egyption Home Food</title>
-    <link rel="icon" type="image/x-icon" href="./assets/images/logo.png">
+    <link rel="icon" type="image/x-icon" href="./assets/images/icon.png">
 </head>
 <body>
     <nav >
@@ -23,36 +24,49 @@
             <a href="#" class="nav-link bounce">About us</a>
             <a href="#" class="nav-link bounce">Contact us</a>
             <a href="#" class="btn-form bounce" id="signup" data-bs-toggle="modal" data-bs-target="#signupform">Login</a>
-            <a href="#" class="btn-form bounce">Sing up</a>
 
             <div class="modal fade" id="signupform" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
                 <div class="modal-dialog">
                   <div class="modal-content">
-                    <p style="text-align:center;font-size:1.3em;padding-top:1.3em;font-size:1.5em;font-weight:700">Login</p>
                     <div id="form">
-                        <div>
-                            <input data-key="username" type="text" name="" required="">
-                            <label>Username</label><br>
-                        </div>
-                        <div>
-                            <input data-key="password" type="password" name="" required="">
-                            <label data-key="password" id="password">Password</label><br>
-                        </div>
-                        <div style="width:100%;" id="footer">
-                            <button style="background-color:rgb(255, 90, 0)" type="submit">Submit</button>
-                            <button style="background-color:#a9a9a9" data-bs-dismiss="modal">Close</button>
-                        </div>
+                        <form action="">
+                            <p style="font-size:1.3em;padding-top:0.8em;font-size:1.5em;font-weight:500">Login</p>
+                            <div>
+                                <label>Username:</label>
+                                <input data-key="username" type="text" name=""  placeholder="Type Your Username">
+                            </div><br>
+                            <div>
+                                <div id="password-header">
+                                    <label data-key="password" id="password" >Password:</label>
+                                    <a href="#" style="color:#0000ee;float:right" >Forget The Password</a>    
+                                </div>
+                                <input data-key="password" type="password" name="" placeholder="Type Your Password">
+                            </div>
+                            <div style="width:100%;" id="footer">
+                                <button id="cancel-btn"  data-dismiss="modal">Close</button>
+                                <button  id="submit-btn" type="submit">Login</button>
+                            </div>
+                        </form>
                     </div>
-                    <a href="#" style="color:#0000ee;width:100%;text-align:center;padding:10px;text-decoration:underline">
-                        Don't Have account?</a>
+                    
                   </div>
                 </div>
               </div>
         </div>
     </nav>
+    <section>
+        <div id="home-screen">
+            <img src="./assets/images/right.webp" alt="">
+            <div id="home-screen-text">
+                <h1>Welcome to House Egyption Food</h1>
+                <a><button id="signup-btn">Let's Start</button></a>
+            </div>
+            <img src="./assets/images/left.webp" alt="">
+        </div>
+    </section>
     <section></section>
-    <section></section>
-    <footer> </footer>
-    <script src="./assets/JS/home.js"></script>
+    <footer>    </footer>
+    <script src="./assets/JS/home.js" async></script>
 </body>
 </html>
