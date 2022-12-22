@@ -81,42 +81,91 @@ a.nav-link{
 }
 
 #form{
-    width:70%;
+    width:80%;
     left:10%;
     position: relative;
 }
 
-#form div{
+#form form{
     margin:1.8em;
 }
+
 input{
-    position: relative;
-    border:0;
-    width:100%;
-    border-bottom: 2px solid black;
-    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    height:2.4em;
+    border:1px solid gray;
+    color:gray;
 }
+
+input::placeholder{
+    padding:3px;
+}
+
+input:active{
+    outline: #545454;
+}
+
 label{
-    position: absolute;
-    left:8%;
-    z-index: 999;
-    transition: 1s ease;
-
-}
-
-#signupform div button{
     padding:5px;
-    font-size:1.2em;
-    border-radius: 10px;
-    outline:none;
-    margin: 8px;
-    float: right;
-    border:0;
+    font-size: 600;
+    font-size: 1.1em;
+} 
+
+#footer{
+    width:100%;
+    text-align: center;
 }
 
-input:valid ~ label, input:focus ~ label{
-    font-size:0.7em;
-    color:rgb(255, 90, 0);
-    margin-top: -4%;
+#submit-btn{
+    background-color:#ff5a00;
+    border: none;
+    margin-top:1em;
+    color:white;
+    padding:0.7em;
+    border-radius: 5px;
 }
 
+#home-screen{
+    display: flex;
+    justify-content: space-between;
+}
+section div img{
+    height:464px;
+}
+
+section div{
+    background-color: rgb(255, 238, 229);
+}
+
+#home-screen-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer{
+    margin:1em 0 4em 0;
+}
+
+#footer button{
+    padding:10px;
+    width:49%;
+    border-radius: 5px;
+    border:none;
+}
+#submit-btn{
+    background-color: #ff5a00;
+}
+#cancel-btn{
+    color:black;
+}
+
+#signup-btn{
+    background-color: #ff5a00;
+    padding:10px;
+    color:white;
+    border-radius: 5px;
+    border:none;
+}
