@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+        <meta name="description" content="Sign Up">
+        <style>
+            div {
+             background-color: rgb(230, 223, 223);
+             width: 300px;
+             border-radius: 5px;
+             padding: 50px;
+             margin: 20px;
+             display: block;
+             margin-left: auto;
+             margin-right: auto;
+              }
+              input[type=text], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            }
+            input[type=tel], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            }
+            input[type=submit] {
+  width: 100%;
+  background-color:orange;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #d38612;
+}
+        </style>
+    </head>
+    <body>
+   <h1  style=" text-align: center;  font-family:Sans-serif; color:orange;">Sign Up</h1>
+   <div>
+    <form action="">
+        <label style=" font-family:Sans-serif; color:rgb(182, 120, 4);" for="fname">First Name</label>
+        <input type="text" id="fname" name="f_name" placeholder="Your first Name ">
+        <label style=" font-family:Sans-serif; color:rgb(182, 120, 4);" for="lname">Last Name</label>
+        <input type="text" id="lname" name="l_name" placeholder="Your last Name ">
+        <label style=" font-family:Sans-serif; color:rgb(182, 120, 4);" for="email">Email Address</label>
+        <input type="text" id="email" name="email" placeholder="Your Email Address ">
+        <label style=" font-family:Sans-serif; color:rgb(182, 120, 4);" for="fname">Telephone Number</label>
+        <input type="tel" id="number" name="t_number" placeholder="Your telephone number ">
+        <label style=" font-family:Sans-serif; color:rgb(182, 120, 4);" for="gender">Gender</label>
+        <select id="gender" name="yourgender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <label style=" font-family:Sans-serif; color:rgb(182, 120, 4);" for="type">User Type</label>
+        <select id="type" name="yourtype">
+            <option value="regularuser">Regular User</option>
+            <option value="cooker">Cooker</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+    <p style="  font-family:Sans-serif; color:rgb(182, 120, 4);">If you have an account, <a href="">click here</a></p>
+   </div>
+    </body>
+</html>
