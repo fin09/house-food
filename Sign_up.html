@@ -33,15 +33,24 @@
             box-sizing: border-box;
             }
             input[type=submit] {
-  width: 100%;
-  background-color:orange;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+             width: 100%;
+             background-color:orange;
+             color: white;
+             padding: 14px 20px;
+             margin: 8px 0;
+             border: none;
+             border-radius: 4px;
+             cursor: pointer;
+            }
+            input[type=password], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            }
 
 input[type=submit]:hover {
   background-color: #d38612;
@@ -58,6 +67,8 @@ input[type=submit]:hover {
         <input type="text" id="lname" name="l_name" placeholder="Your last Name ">
         <label style=" font-family:Sans-serif; color:rgb(182, 120, 4);" for="email">Email Address</label>
         <input type="text" id="email" name="email" placeholder="Your Email Address ">
+        <label style=" font-family:Sans-serif; color:rgb(182, 120, 4);" for="pss">Password</label>
+        <input type="password" id="passw" name="pass" placeholder="Your Password">
         <label style=" font-family:Sans-serif; color:rgb(182, 120, 4);" for="fname">Telephone Number</label>
         <input type="tel" id="number" name="t_number" placeholder="Your telephone number ">
         <label style=" font-family:Sans-serif; color:rgb(182, 120, 4);" for="gender">Gender</label>
