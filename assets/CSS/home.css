@@ -9,7 +9,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-nav{
+#desktop-nav{
     display: flex;
     height:4.5em;
     background-color:#ff5a00;
@@ -17,6 +17,49 @@ nav{
     justify-content:space-around;
     align-items: center;
     color:white;
+}
+
+nav{
+    background-color:#ff5a00;
+    color:white;
+}
+#mobile-nav{
+    z-index: 9999;
+    width:10em;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left:-100%;
+    background:linear-gradient(to right,#ff5a00,#ad6602 );
+}
+
+#logo-desktop{
+    margin:1em;
+}
+#button-collaps{
+    width:2.5em;
+    height: 2.5em;
+    border: none;
+    border-radius: 5px;
+}
+#button-collaps i{
+    font-size: 1.4em;
+    color:red;
+}
+#mobile-navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:100vw;
+    padding:0.8em;
+}
+#mobile-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #links{
@@ -96,6 +139,7 @@ input{
     height:2.4em;
     border:1px solid gray;
     color:gray;
+    padding:5px;
 }
 
 input::placeholder{
@@ -168,4 +212,9 @@ section div{
     color:white;
     border-radius: 5px;
     border:none;
+}
+
+
+section img{
+    display: none;
 }
