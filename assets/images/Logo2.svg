@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 372 107" width="500px" height="500px" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <style bx:fonts="Aclonica">@import url(https://fonts.googleapis.com/css2?family=Aclonica%3Aital%2Cwght%400%2C400&amp;display=swap);</style>
+  </defs>
+  <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 22px;" x="139.805" y="127.553"> </text>
+  <text style="fill: rgb(51, 51, 51); font-family: Aclonica; font-size: 44px; font-weight: 700; text-transform: capitalize; white-space: pre;" x="-122.526" y="117.499" transform="matrix(1.271441, 0, 0, 2.195636, -78.430954, -468.248993)" bx:origin="0.5 1.479507"><tspan style="fill: rgb(255, 90, 0); fill-rule: evenodd; font-size: 44px; word-spacing: 0px;" x="64.405" y="255.105">H</tspan><tspan style="font-size: 44px; word-spacing: 0px;">ouse </tspan><tspan style="fill: rgb(255, 90, 0); paint-order: stroke; font-size: 44px; word-spacing: 0px;">F</tspan><tspan style="font-size: 44px; word-spacing: 0px;">ood</tspan></text>
+</svg>

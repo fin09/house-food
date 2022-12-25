@@ -10,63 +10,323 @@
     <script src="./assets/JS/anime.min.js"></script>
     <script src="./assets/JS/bootstrap.js"></script>
     <script src="./assets/JS/jquery.js"></script>
+    <link rel="stylesheet" href="./assets/CSS/codewithsadee.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
     <link rel="stylesheet" href="./assets/fontawesome/css/all.css"/>
+ 
     <title>Egyption Home Food</title>
     <link rel="icon" type="image/x-icon" href="./assets/images/icon.png">
 </head>
-<body>
-    <nav >
-        <div id="logo" >
-            <a href="#" ><img src="./assets/images/logo.png"></a>
-        </div>
-        <div id="links">
-            <a href="#" class="nav-link bounce">Home</a>
-            <a href="#" class="nav-link bounce">About us</a>
-            <a href="#" class="nav-link bounce">Contact us</a>
-            <a href="#" class="btn-form bounce" id="signup" data-bs-toggle="modal" data-bs-target="#signupform">Login</a>
-
-            <div class="modal fade" id="signupform" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div id="form">
-                        <form action="">
-                            <p style="font-size:1.3em;padding-top:0.8em;font-size:1.5em;font-weight:500">Login</p>
-                            <div>
-                                <label>Username:</label>
-                                <input data-key="username" type="text" name=""  placeholder="Type Your Username">
-                            </div><br>
-                            <div>
-                                <div id="password-header">
-                                    <label data-key="password" id="password" >Password:</label>
-                                    <a href="#" style="color:#0000ee;float:right" >Forget The Password</a>    
-                                </div>
-                                <input data-key="password" type="password" name="" placeholder="Type Your Password">
-                            </div>
-                            <div style="width:100%;" id="footer">
-                                <button id="cancel-btn"  data-dismiss="modal">Close</button>
-                                <button  id="submit-btn" type="submit">Login</button>
-                            </div>
-                        </form>
-                    </div>
-                    
-                  </div>
+<body style="padding:0;margin:0;">
+    <header style="margin:0px">    
+        <script id="navbar-for-desktop" type="text/x-handlebars">
+            <nav id="desktop-nav">
+                <div>
+                    <a href="#" ><img src="./assets/images/logo.png"></a>
                 </div>
-              </div>
-        </div>
-    </nav>
-    <section>
-        <div id="home-screen">
-            <img src="./assets/images/right.webp" alt="">
-            <div id="home-screen-text">
-                <h1>Welcome to House Egyption Food</h1>
-                <a><button id="signup-btn">Let's Start</button></a>
+                <div id="links">
+                    <a href="#" class="nav-link bounce">Home</a>
+                    <a href="#" class="nav-link bounce">About us</a>
+                    <a href="#" class="nav-link bounce">Contact us</a>
+                    <a href="#" class="btn-form bounce" id="signup" data-bs-toggle="modal" data-bs-target="#signupform"
+                    style="border:1px solid white;padding:10px;border-radius:10px;">Login</a>
+            
+                    <div class="modal fade" id="signupform" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div id="form">
+                                <form action="">
+                                    <p style="font-size:1.3em;padding-top:0.8em;font-size:1.5em;font-weight:500">Login</p>
+                                    <div>
+                                        <label>Username:</label>
+                                        <input data-key="username" type="text" name=""  placeholder="Type Your Username">
+                                    </div><br>
+                                    <div>
+                                        <div id="password-header">
+                                            <label data-key="password" id="password" >Password:</label>
+                                            <a href="#" style="color:#0000ee;float:right" >Forget The Password</a>    
+                                        </div>
+                                        <input data-key="password" type="password" name="" placeholder="Type Your Password">
+                                    </div>
+                                    <div style="width:100%;" id="foot">
+                                        <button id="cancel-btn" style="background-color: bisque;border-radius:5px;"  data-dismiss="modal">Close</button>
+                                        <button  id="submit-btn" type="submit"><a href="./home.html">Login</a></button>
+                                    </div>
+                                </form>
+                            </div> 
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </nav>
+        </script>
+        <script id="navbar-mobile" type="text/x-handlebars">
+            <div id="header">
+                <img src="./assets/images/logo.png" style="width:5em;height:5em"/>
+                <i class="fa-solid fa-bars" id="open-navbar"></i>
             </div>
-            <img src="./assets/images/left.webp" alt="">
+    
+            <div>
+                <nav id="mobile-nav">
+                    <i class="fa-solid fa-xmark" id="close-navbar"></i>
+                    <h1 style="text-align:center;font-size:3em">House Food</h1>
+                    <a href="#" class="nav-links" >Home</a>
+                    <a href="#aboutus">About us</a>
+                    <a href="#">Contact us</a>
+                    <a href="#" class="btn-form-mobile bounce" id="signup" data-bs-toggle="modal" data-bs-target="#signupform">Login</a>    
+                    <div class="modal fade" id="signupform" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div id="form">
+                                <form action="">
+                                    <p style="font-size:1.3em;padding-top:0.8em;font-size:1.5em;font-weight:500">Login</p>
+                                    <div>
+                                        <label>Username:</label>
+                                        <input data-key="username" type="text" name=""  placeholder="Type Your Username">
+                                    </div><br>
+                                    <div>
+                                        <div id="password-header">
+                                            <label data-key="password" id="password" style="font-size:0.8em" >Password:</label>
+                                            <a href="#" style="color:#0000ee;float:right;font-size:0.8em" >Forget The Password</a>    
+                                        </div>
+                                        <input data-key="password" type="password" name="" placeholder="Type Your Password">
+                                    </div>
+                                    <div style="width:100%;" id="footer">
+                                        <button id="cancel-btn"  data-dismiss="modal">Close</button>
+                                        <button  id="submit-btn" type="submit">Login</button>
+                                    </div>
+                                </form>
+                            </div> 
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                </nav>
+            </script>
+        </header>
+
+    <section class="home-section" id="home" style="display:flex;flex-direction:column">
+        <script id="home-section-mobile" type="text/x-handlebars" >
+            <div id="home-screen"> 
+                <div id="home-screen-text" style="height:100vh;width:100vw;">
+                    <h1 style="margin:1em;">Welcome to House Egyption Food</h1>
+                    <a href="./Sign_up.html"><button id="signup-btn">Get Started</button></a>
+                </div>
+            </div>
+        </script>
+        <script id="home-section-desktop" type="text/x-handlebars">
+            <div id="demo">
+                <video style="height:110vh;width:100vw" autoplay muted>
+                <source src="./assets/images/videoplayback.mp4" type="video/mp4">
+            </video>
+            </div>
+            <div id="home-screen"> 
+                <img src="./assets/images/right.webp">
+                <div id="home-screen-text" >
+                    <h1 style="margin:1em">Welcome to House Egyption Food</h1>
+                    <a href="./Sign_up.html"><button id="signup-btn">Get Started</button></a>
+                </div>
+                <img src="./assets/images/left.webp">
+            </div>
+        </script>
+
+      
+    </section>
+    <section class="mobile-section" id="aboutus">
+        <h1 style="text-align:center;margin-top:2em;font-size:2.5em;">Your everyday, right away</h1>
+       <div class="info-mobile-screen" id="section1">
+        <div >
+          <p style="float:right;">
+            If you want to no longer eat unhealthy food you can order from us it's 100% healthy and safe food made by best chefs in Egypt.
+          </p>
+        </div>
+        <div>
+            <img src="./assets/images/kushari.jpg" style="float:left">
+        </div>
+       </div> 
+       <div class="info-mobile-screen" id="section2">
+        <div >
+          <p style="float:left;">
+            If you want to no longer eat unhealthy food you can order from us it's 100% healthy and safe food made by best chefs in Egypt.
+        </p>
+        </div>
+        <div>
+            <img src="./assets/images/chicken.png" style="float:right">
+        </div>
+       </div> 
+    </section>
+     <section class="footer">
+
+        <div class="footer-top section">
+            <div class="container">
+
+                <div class="footer-brand">
+
+                    <a href="#" class="logo">
+                        <img src="./assets/images/Logo2.svg" width="300" height="100" alt="Footer logo">
+                    </a>
+
+                    <ul class="social-list">
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-pinterest"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="footer-link-box">
+
+                    <ul class="footer-list">
+
+                        <li>
+                            <p class="footer-list-title">Contact Us</p>
+                        </li>
+
+                        <li>
+                            <address class="footer-link">
+                <ion-icon name="location"></ion-icon>
+
+                <span class="footer-link-text">
+                  Egypt, Giza, 6th of October
+                </span>
+              </address>
+                        </li>
+
+                        <li>
+                            <a href="tel:+201017395386" class="footer-link">
+                                <ion-icon name="call"></ion-icon>
+
+                                <span class="footer-link-text">+201017395386</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="mailto:footcap@help.com" class="footer-link">
+                                <ion-icon name="mail"></ion-icon>
+
+                                <span class="footer-link-text">housefood@help.com</span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="footer-list">
+
+                        <li>
+                            <p class="footer-list-title">My Account</p>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">
+                                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                                <span class="footer-link-text">My Account</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">
+                                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                                <span class="footer-link-text">View Cart</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">
+                                <ion-icon name="chevron-forward-outline"></ion-icon>
+                                <span class="footer-link-text">Sign out</span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <div class="footer-list">
+
+                        <p class="footer-list-title">Opening Time</p>
+
+                        <table class="footer-table">
+                            <tbody>
+
+                                <tr class="table-row">
+                                    <th class="table-head" scope="row">Mon - Tue:</th>
+
+                                    <td class="table-data">8AM - 10PM</td>
+                                </tr>
+
+                                <tr class="table-row">
+                                    <th class="table-head" scope="row">Wed:</th>
+
+                                    <td class="table-data">8AM - 7PM</td>
+                                </tr>
+
+                                <tr class="table-row">
+                                    <th class="table-head" scope="row">Fri:</th>
+
+                                    <td class="table-data">7AM - 12PM</td>
+                                </tr>
+
+                                <tr class="table-row">
+                                    <th class="table-head" scope="row">Sat:</th>
+
+                                    <td class="table-data">9AM - 8PM</td>
+                                </tr>
+
+                                <tr class="table-row">
+                                    <th class="table-head" scope="row">Sun:</th>
+
+                                    <td class="table-data">Closed</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <div class="footer-list">
+
+                        <p class="footer-list-title">Newsletter</p>
+
+                        <p class="newsletter-text">
+                            You can now register to be a chef with us.
+                        </p>
+
+                        <form action="" class="newsletter-form">
+                            <input type="email" name="email" required placeholder="Email Address" class="newsletter-input">
+
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
         </div>
     </section>
-    <section></section>
-    <footer>    </footer>
-    <script src="./assets/JS/home.js" async></script>
+    <a href="#top" class="go-top-btn" data-go-top>
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </a>
+    <script src="./assets/JS/home.js"></script>
 </body>
 </html>
