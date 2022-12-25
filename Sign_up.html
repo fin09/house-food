@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <script src="./assets/JS/jquery.js"></script>
     <head>
         <title>Sign Up</title>
         <meta name="description" content="Sign Up">
@@ -81,9 +82,14 @@ input[type=submit]:hover {
             <option value="regularuser">Regular User</option>
             <option value="cooker">Cooker</option>
         </select>
-        <input type="submit" value="Submit">
+        <input  id="submit-btn" type="submit" value="Submit" >
     </form>
     <p style="  font-family:Sans-serif; color:rgb(182, 120, 4);">If you have an account, <a href="">click here</a></p>
    </div>
+   <script>
+       $('#submit-btn').click(function(){
+        window.open('./home.html');
+       }) 
+   </script>
     </body>
 </html>
